@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lazyblur</title>
+	<style>
+		body {
+			margin: 0;
+		}
+		img[data-src] {
+			-webkit-filter: blur(20px);
+			-moz-filter: blur(20px);
+			-o-filter: blur(20px);
+			-ms-filter: blur(20px);
+			filter: blur(20px);
+		}
+		img {
+			-webkit-transition-duration: 1s; /* Safari */
+    		transition-duration: 1s;
+    		display: block;
+    		float: left;
+    		position: relative;
+		}
+		.container {
+			max-width: 1440px;
+			margin: 0 auto;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<img src="img/tiny.jpg" 		data-src="img/large.jpg" 		width="720px" height="720px" alt="lazyBlur Demo" class="lazyblur">
+		<img src="img/smallKittens.jpg" data-src="img/largeKittens.jpg" width="720px" height="720px" alt="lazyBlur Demo" class="lazyblur">
+		<img src="img/smallKittens.jpg" data-src="img/largeKittens.jpg" width="720px" height="720px" alt="lazyBlur Demo" class="lazyblur">
+		<img src="img/tiny.jpg" 		data-src="img/large.jpg" 		width="720px" height="720px" alt="lazyBlur Demo" class="lazyblur">
+		<img src="img/tiny.jpg" 		data-src="img/large.jpg" 		width="720px" height="720px" alt="lazyBlur Demo" class="lazyblur">
+		<img src="img/smallKittens.jpg" data-src="img/largeKittens.jpg" width="720px" height="720px" alt="lazyBlur Demo" class="lazyblur">
+		<img src="img/smallKittens.jpg" data-src="img/largeKittens.jpg" width="720px" height="720px" alt="lazyBlur Demo" class="lazyblur">
+		<img src="img/tiny.jpg" 		data-src="img/large.jpg" 		width="720px" height="720px" alt="lazyBlur Demo" class="lazyblur">
+		<img src="img/tiny.jpg" 		data-src="img/large.jpg" 		width="720px" height="720px" alt="lazyBlur Demo" class="lazyblur">
+		<img src="img/smallKittens.jpg" data-src="img/largeKittens.jpg" width="720px" height="720px" alt="lazyBlur Demo" class="lazyblur">
+		<img src="img/smallKittens.jpg" data-src="img/largeKittens.jpg" width="720px" height="720px" alt="lazyBlur Demo" class="lazyblur">
+		<img src="img/tiny.jpg" 		data-src="img/large.jpg" 		width="720px" height="720px" alt="lazyBlur Demo" class="lazyblur">
+	</div>
+</body>
+<script src="lazyblur.js"></script>
+</html>
